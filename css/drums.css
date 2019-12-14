@@ -1,0 +1,54 @@
+html, body {
+    overflow: hidden;
+}
+
+.background {
+	background: black;
+	cursor: none;
+}
+
+.drums {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#map area {
+    outline: none;
+    cursor: none;
+}
+
+.cursor {
+  position: absolute;
+  width: 7%;
+  height: 14%;
+  left: -3%;
+  cursor: none;
+  pointer-events: none;
+}
+
+
+div.clickEffect{
+	position:fixed;
+	box-sizing:border-box;
+	border-style: dashed;
+	border-color:#FFFFFF;
+	border-radius:50%;
+	animation:clickEffect 0.4s ease-out;
+	z-index:99999;
+}
+@keyframes clickEffect{
+	0%{
+		opacity:1;
+		width:0.5em; height:0.5em;
+		margin:-0.25em;
+		border-width:0.5em;
+	}
+	100%{
+		opacity:0.2;
+		width:4em; height:4em;
+		margin:-2em;
+		border-width:0.03em;
+	}
+}
